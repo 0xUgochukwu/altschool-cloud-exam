@@ -1,7 +1,7 @@
 # Altschool Cloud Engineering Exam (Semester 3)
 
 ## Overview
-A complete CI/CD deployment of two apps to a kubernetes cluster with monitoring using prometheus and grafana.
+A complete CI/CD deployment of two apps to a kubernetes cluster with monitoring and logging using prometheus and grafana.
 
 ### Image of all pods running
 ![Image of all pods running](https://github.com/0xUgochukwu/altschool-cloud-exam/blob/02439018b5b68141575c9138baa95ae19190dc52/pods-list.jpg)
