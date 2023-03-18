@@ -16,4 +16,8 @@ Then cd into the repo, make sure the host machine you are using has ansible inst
 
     ```ansible-playbook ansible/main.yaml```
 
-Then use Kubectl to deploy the apps and run the Jenkinsfile to set up monitoring with prometheus and grafana
+
+Then cd into the terraform folder of the cloned repo and set up the infrastructure using terraform
+
+
+Once this is successful, you can now use Kubectl and/or Jenkins to deploy the apps ;)
