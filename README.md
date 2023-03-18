@@ -10,10 +10,10 @@ A complete CI/CD deployment of two apps to a kubernetes cluster with monitoring 
 
 Clone the repo by running the following command:
     
-    ```git clone https://github.com/0xUgochukwu/altschool-cloud-exam.git```
+`git clone https://github.com/0xUgochukwu/altschool-cloud-exam.git`
 
 Then cd into the repo, make sure the host machine you are using has ansible installed, then run the ansible playbook to install all prerequisites needed by the host
 
-    ```ansible-playbook ansible/main.yaml```
+`ansible-playbook ansible/main.yaml`
 
 Then use Kubectl to deploy the apps and run the Jenkinsfile to set up monitoring with prometheus and grafana
