@@ -37,7 +37,7 @@ data:
         scrape_interval: 5s
         metrics_path: 'metrics'
         static_configs:
-          - targets: ['ae8efc63fdf9b4ef18e3cdbffa1cc08d-1254050327.us-east-1.elb.amazonaws.com']
+          - targets: ['http://a8b52786d4bf0465e958ce9d89f676ca-1212627966.us-east-1.elb.amazonaws.com/']
 
       # The job name assigned to scraped metrics by default.
       - job_name: "catalogue"
@@ -46,36 +46,66 @@ data:
         # List of labeled statically configured targets for this job.
         static_configs:
           # The targets specified by the static config.
-          - targets: ['ae8efc63fdf9b4ef18e3cdbffa1cc08d-1254050327.us-east-1.elb.amazonaws.com']
+          - targets: ['http://a8b52786d4bf0465e958ce9d89f676ca-1212627966.us-east-1.elb.amazonaws.com/']
 
       - job_name: "payment"
         scrape_interval: 5s
         static_configs:
-          - targets: ['ae8efc63fdf9b4ef18e3cdbffa1cc08d-1254050327.us-east-1.elb.amazonaws.com']
+          - targets: ['http://a8b52786d4bf0465e958ce9d89f676ca-1212627966.us-east-1.elb.amazonaws.com/']
 
       - job_name: "user"
         scrape_interval: 5s
         static_configs:
-          - targets: ['ae8efc63fdf9b4ef18e3cdbffa1cc08d-1254050327.us-east-1.elb.amazonaws.com']
+          - targets: ['http://a8b52786d4bf0465e958ce9d89f676ca-1212627966.us-east-1.elb.amazonaws.com/']
 
       - job_name: "orders"
         scrape_interval: 5s
         # The HTTP resource path on which to fetch metrics from targets.
         metrics_path: 'metrics'
         static_configs:
-          - targets: ['ae8efc63fdf9b4ef18e3cdbffa1cc08d-1254050327.us-east-1.elb.amazonaws.com']
+          - targets: ['http://a8b52786d4bf0465e958ce9d89f676ca-1212627966.us-east-1.elb.amazonaws.com/']
 
       - job_name: "cart"
         scrape_interval: 5s
         metrics_path: 'metrics'
         static_configs:
-          - targets: ['ae8efc63fdf9b4ef18e3cdbffa1cc08d-1254050327.us-east-1.elb.amazonaws.com']
+          - targets: ['http://a8b52786d4bf0465e958ce9d89f676ca-1212627966.us-east-1.elb.amazonaws.com/']
 
       - job_name: "shipping"
         scrape_interval: 5s
         metrics_path: 'metrics'
         static_configs:
-          - targets: ['ae8efc63fdf9b4ef18e3cdbffa1cc08d-1254050327.us-east-1.elb.amazonaws.com']
+          - targets: ['http://a8b52786d4bf0465e958ce9d89f676ca-1212627966.us-east-1.elb.amazonaws.com/']
+
+      - job_name: "emoji"
+        scrape_interval: 5s
+        metrics_path: 'metrics'
+        static_configs:
+          - targets: ['http://ad7770680a26a4862b92f6a2c3ced773-1485254005.us-east-1.elb.amazonaws.com/']
+
+
+      - job_name: "vote-bot"
+        scrape_interval: 5s
+        metrics_path: 'metrics'
+        static_configs:
+          - targets: ['http://ad7770680a26a4862b92f6a2c3ced773-1485254005.us-east-1.elb.amazonaws.com/']
+
+
+        
+    - job_name: "voting-dc"
+      scrape_interval: 5s
+      metrics_path: 'metrics'
+      static_configs:
+        - targets: ['http://ad7770680a26a4862b92f6a2c3ced773-1485254005.us-east-1.elb.amazonaws.com/']
+        
+
+    - job_name: "emojivoto-web"
+      scrape_interval: 5s
+      metrics_path: 'metrics'
+      static_configs:
+        - targets: ['http://ad7770680a26a4862b92f6a2c3ced773-1485254005.us-east-1.elb.amazonaws.com/']
+
+
 
       - job_name: "queue-master"
         scrape_interval: 5s
