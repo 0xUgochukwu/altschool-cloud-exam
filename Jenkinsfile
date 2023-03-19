@@ -19,10 +19,10 @@ pipeline {
                 }
             }
         }
-        stage("Deploy to Sock App") {
+        stage("Deploy Socks Shop") {
             steps {
                 script {
-                    dir('socks-app/deployment/kubernetes') {
+                    dir('socks-app/deployment') {
                         try{
                             sh "aws eks update-kubeconfig --name altschool-exam-cluster"
                             sh "kubectl create -f main.yaml"
@@ -35,6 +35,20 @@ pipeline {
                 }
             }
         }
+        stage("Deploy Emojivoto") {
+            steps {
+                script {
+                    dir('emojivoto') {
+                        try{
+                            sh "kubectl create -k deployment"
+                        }
+                        catch(error){
+                            sh "kubectl apply -k deployment"
+                        }
+
+                    }
+                }
+            }
         stage("Apply the clusterRole config"){
             steps{
                 script {
