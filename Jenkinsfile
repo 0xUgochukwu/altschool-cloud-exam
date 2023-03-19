@@ -22,7 +22,7 @@ pipeline {
         stage("Deploy to Sock App") {
             steps {
                 script {
-                    dir('socks-app/deploy/kubernetes') {
+                    dir('socks-app/deployment/kubernetes') {
                         try{
                             sh "aws eks update-kubeconfig --name altschool-exam-cluster"
                             sh "kubectl create -f main.yaml"
