@@ -23,4 +23,4 @@ Then cd into the terraform folder of the cloned repo and set up the infrastructu
 Once this is successful, you can now use Kubectl and/or Jenkins to deploy the apps 
 
 
-#;)
+# ;)
