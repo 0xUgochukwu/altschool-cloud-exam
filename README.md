@@ -20,4 +20,7 @@ Then cd into the repo, make sure the host machine you are using has ansible inst
 Then cd into the terraform folder of the cloned repo and set up the infrastructure using terraform
 
 
-Once this is successful, you can now use Kubectl and/or Jenkins to deploy the apps ;)
+Once this is successful, you can now use Kubectl and/or Jenkins to deploy the apps 
+
+
+#;)
